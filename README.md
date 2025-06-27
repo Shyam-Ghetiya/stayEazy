@@ -80,4 +80,3 @@
 - 📆 Real-time calendar-based room availability
 - 📲 Mobile PWA support
 - 🔄 Integration with payment gateway (Razorpay/Stripe)
-- 📥 Review & Rating submission system
