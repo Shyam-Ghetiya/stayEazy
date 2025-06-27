@@ -80,3 +80,5 @@
 - 📆 Real-time calendar-based room availability
 - 📲 Mobile PWA support
 - 🔄 Integration with payment gateway (Razorpay/Stripe)
+
+- **Website**: [stayeazy.vercel.app](https://stayeazy.vercel.app)
