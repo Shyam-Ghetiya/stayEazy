@@ -166,7 +166,7 @@ export default function ManagerHotel() {
             const handleHotelClick = async () => {
                 try {
                   // Fetch the detailed hotel information
-                  const response = await fetch(`http://localhost:8000/api/v1/hotels/${hotelId}`, {
+                  const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${hotelId}`, {
                     method: "GET",
                     headers: {
                       "Content-Type": "application/json",

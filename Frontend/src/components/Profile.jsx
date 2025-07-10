@@ -20,7 +20,7 @@ export default function Profile() {
   const gethoteldata = async () => {
     const token = Cookies.get('token');
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/user/bookig-history`, {
+      const response = await fetch(`https://stayeazy.onrender.com/api/v1/user/bookig-history`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -51,7 +51,7 @@ export default function Profile() {
         return;
       }
 
-      const response = await fetch(`http://localhost:8000/api/v1/user/update-profile`, {
+      const response = await fetch(`https://stayeazy.onrender.com/api/v1/user/update-profile`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

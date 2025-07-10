@@ -125,7 +125,7 @@ const BookingPage = () => {
 
         try {
             const token = Cookies.get('token');
-            const response = await fetch(`http://localhost:8000/api/v1/hotels/${id}/confirm-booking`, {
+            const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${id}/confirm-booking`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

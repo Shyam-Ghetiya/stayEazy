@@ -46,7 +46,7 @@ export default function Login() {
     }
     const { email, hotelId, password, userType } = formData;
     try {
-      const endpoint = userType === "customer" ? `http://localhost:8000/api/v1/user/createlogin` : `http://localhost:8000/api/v1/manager/login`;
+      const endpoint = userType === "customer" ? `https://stayeazy.onrender.com/api/v1/user/createlogin` : `https://stayeazy.onrender.com/api/v1/manager/login`;
       const payload = userType === "customer" ? { email, password } : { email: hotelId, password };
       console.log(endpoint);
       const res = await fetch(endpoint, {
@@ -123,7 +123,7 @@ export default function Login() {
   const handleGoogleSignIn = async (response) => {
     try {
       console.log(response);
-      const res = await fetch(`http://localhost:8000/api/v1/user/google-signin`, {
+      const res = await fetch(`https://stayeazy.onrender.com/api/v1/user/google-signin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

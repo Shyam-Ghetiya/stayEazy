@@ -102,7 +102,7 @@ export default function Signup() {
     setIsLoading(true);
 
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/user/createmessage`, {
+      const res = await fetch(`https://stayeazy.onrender.com/api/v1/user/createmessage`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -147,7 +147,7 @@ export default function Signup() {
     setIsOtpLoading(true);
 
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/user/verify-otp`, {
+      const res = await fetch(`https://stayeazy.onrender.com/api/v1/user/verify-otp`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -183,7 +183,7 @@ export default function Signup() {
 
   const resendOtp = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/api/v1/user/resend-otp`, {
+      const res = await fetch(`https://stayeazy.onrender.com/api/v1/user/resend-otp`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

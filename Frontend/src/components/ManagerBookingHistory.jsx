@@ -84,7 +84,7 @@ export default function ManagerBookingHistoryPage() {
     const fetchBookings = async () => {
       try {
         const response = await fetch(
-          `http://localhost:8000/api/v1/manager/${hotelId}/booking-history`,
+          `https://stayeazy.onrender.com/api/v1/manager/${hotelId}/booking-history`,
           {
             method: 'GET',
           }

@@ -142,7 +142,7 @@ export default function HotelSearchPage() {
         setError(null);
 
         try {
-          const response = await fetch(`http://localhost:8000/api/v1/hotels/search`, {
+          const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/search`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ export default function HotelSearchPage() {
     setError(null);
 
     try {
-      const response = await fetch(`http://localhost:8000/api/v1/hotels/search`, {
+      const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/search`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

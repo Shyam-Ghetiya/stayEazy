@@ -11,7 +11,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('http://localhost:8000/api/v1/admin/login-admin', {
+      const res = await fetch('https://stayeazy.onrender.com/api/v1/admin/login-admin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

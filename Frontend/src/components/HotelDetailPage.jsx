@@ -33,7 +33,7 @@ export default function HotelDetailPage () {
       const handleHotelClick = async () => {
         try {
           // Fetch the detailed hotel information
-          const response = await fetch(`http://localhost:8000/api/v1/hotels/${id}`, {
+          const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${id}`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
@@ -125,7 +125,7 @@ export default function HotelDetailPage () {
 
     useEffect(() => {
       if (checkInDate && checkOutDate) {
-        fetch(`http://localhost:8000/api/v1/hotels/${id}/check-availability`, {
+        fetch(`https://stayeazy.onrender.com/api/v1/hotels/${id}/check-availability`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -160,7 +160,7 @@ export default function HotelDetailPage () {
 
             // Check room availability before proceeding
             try {
-                const response = await fetch(`http://localhost:8000/api/v1/hotels/${id}/check-availability`, {
+                const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${id}/check-availability`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

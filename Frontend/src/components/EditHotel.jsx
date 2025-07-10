@@ -72,7 +72,7 @@ const HotelForm = () => {
       // console.log("shyam- ",formData);
 
       console.log("shyam",hotelData);
-      const response = await axios.post(`http://localhost:8000/api/v1/manager/edit-hotel-details`,hotelData);
+      const response = await axios.post(`https://stayeazy.onrender.com/api/v1/manager/edit-hotel-details`,hotelData);
       console.log(response);
       console.log('afdasdfas',response.data.data.hotel);
       console.log(response.data.data.success);
