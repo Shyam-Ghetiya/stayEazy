@@ -81,4 +81,4 @@
 - 📲 Mobile PWA support
 - 🔄 Integration with payment gateway (Razorpay/Stripe)
 
-- **Website**: [stayeazy.vercel.app](https://stayeazy.vercel.app)
+- **Website**: [stayeazyhotelbookingsystem.vercel.app](https://stayeazyhotelbookingsystem.vercel.app)
