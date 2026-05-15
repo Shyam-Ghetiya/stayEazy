@@ -38,7 +38,7 @@ function ReviewForm() {
         try {
             const token = Cookies.get('token');
             console.log("shaym id, ",id);
-            const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${id}/addRatings`, {
+            const response = await fetch(`${config.BACKEND_ID}/api/v1/hotels/${id}/addRatings`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -90,7 +90,7 @@ const HotelForm2 = () => {
     }
     
     try {
-      const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/hotelRegister`, {
+      const response = await fetch(`${config.BACKEND_ID}/api/v1/hotels/hotelRegister`, {
         method: 'POST',
         body: formData, // Convert the hotelData object to JSON
       });

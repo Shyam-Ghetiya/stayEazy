@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import config from '../config';
 
 export default function AdminLogin() {
   const [email, setEmail] = useState('');
@@ -11,7 +12,7 @@ export default function AdminLogin() {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('https://stayeazy.onrender.com/api/v1/admin/login-admin', {
+      const res = await fetch(`${config.BACKEND_ID}/api/v1/admin/login-admin`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

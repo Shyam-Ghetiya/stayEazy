@@ -99,7 +99,7 @@ export default function Home() {
     const gethoteldata = async () => {
       // const token = Cookies.get('token');
       try {
-        const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/getRandomHotels`, {
+        const response = await fetch(`${config.BACKEND_ID}/api/v1/hotels/getRandomHotels`, {
           method: 'GET',
         })
   

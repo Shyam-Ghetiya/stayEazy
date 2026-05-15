@@ -36,7 +36,7 @@ export default function Component() {
         const token = Cookies.get('token');
         if (token) {
             // Verify token and set user
-            fetch(`https://stayeazy.onrender.com/api/v1/user/verify-token`, {
+            fetch(`${config.BACKEND_ID}/api/v1/user/verify-token`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }

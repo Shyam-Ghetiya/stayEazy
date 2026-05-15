@@ -160,7 +160,7 @@ export default function BookingHistoryPage() {
 
     if (window.confirm('Are you sure you want to cancel this booking?')) {
       try {
-        const response = await fetch(`https://stayeazy.onrender.com/api/v1/hotels/${bookingId}`, {
+        const response = await fetch(`${config.BACKEND_ID}/api/v1/hotels/${bookingId}`, {
           method: 'DELETE',
         })
 
