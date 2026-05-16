@@ -4,8 +4,6 @@ import bcryptjs from 'bcryptjs';
 import { validationResult } from 'express-validator';
 import { ApiResponse } from '../utils/ApiResponse.js';
 
-const JWT_SECRET = 'your-secret-key'; // Replace with a secure secret key
-
 const login = async (req, res) => {
 
   try {
@@ -31,7 +29,7 @@ const login = async (req, res) => {
     // Generate JWT token
     const token = jwt.sign(
       { userId: user._id, email: user.e_mail, userType: user.user_type , mobileNumber:user.mobile_number , firstName:user.first_name , lastName:user.last_name},
-      JWT_SECRET,
+      process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );
 

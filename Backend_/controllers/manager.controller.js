@@ -8,8 +8,6 @@ import { BookingDetails } from "../models/booking.model.js";
 import { User } from "../models/user.model.js";
 import jwt from 'jsonwebtoken';
 
-const JWT_SECRET = 'your-secret-key';
-
 const managerLogin = asyncHandler(async (req, res) => {
 
 
@@ -36,7 +34,7 @@ const managerLogin = asyncHandler(async (req, res) => {
         // Generate JWT token
         const token = jwt.sign(
             { hotelId: hotel._id },
-            JWT_SECRET,
+            process.env.JWT_SECRET,
             { expiresIn: '7d' }
         );
 

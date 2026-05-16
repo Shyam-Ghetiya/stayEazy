@@ -4,7 +4,6 @@ import { User } from '../models/user.model.js';
 import jwt from 'jsonwebtoken';
 import bcryptjs from 'bcryptjs';
 import { validationResult } from 'express-validator';
-const JWT_SECRET = 'your-secret-key'; // Use the same secret as in login
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -24,7 +23,7 @@ const forgotPassword = async (req, res) => {
       return res.status(404).json({ message: 'User not found' });
     }
     // Generate a password reset token using JWT
-    const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+    const resetToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
     // Send password reset email
     const resetUrl = `http://localhost:5173/reset-password/${resetToken}`;
@@ -56,7 +55,7 @@ const resetPassword = async (req, res) => {
     const { token, newPassword } = req.body;
 
     // Verify the token
-    const decoded = jwt.verify(token, JWT_SECRET);
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
     const user = await User.findById(decoded.userId);
 
     if (!user) {

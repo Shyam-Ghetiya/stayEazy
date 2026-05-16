@@ -25,8 +25,9 @@ Router.put('/update-profile', authMiddleware, updateProfile);
 
 Router.get("/bookig-history", authMiddleware, handlegetPreviousBookings);
 
-const ADMIN_EMAIL = 'shyamghetiya1035@gmail.com';
-const ADMIN_PASSWORD = 'shyam@123';
+// Admin credentials from environment variables
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
 
 Router.post('/login-admin', (req, res) => {
   const { email, password } = req.body;
