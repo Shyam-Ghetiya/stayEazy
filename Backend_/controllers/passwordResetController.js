@@ -8,8 +8,8 @@ import { validationResult } from 'express-validator';
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'shyamdummy10@gmail.com',
-    pass: 'bfzodqaskcnrgiyr'
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   }
 });
 
@@ -26,10 +26,10 @@ const forgotPassword = async (req, res) => {
     const resetToken = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
     // Send password reset email
-    const resetUrl = `http://localhost:5173/reset-password/${resetToken}`;
+    const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
     const mailOptions = {
       to: user.e_mail,
-      from: 'shyamdummy10@gmail.com',
+      from: process.env.EMAIL_USER,
       subject: 'Password Reset',
       text: `You are receiving this because you (or someone else) have requested the reset of the password for your account.\n\n
         Please click on the following link, or paste this into your browser to complete the process:\n\n
@@ -39,7 +39,8 @@ const forgotPassword = async (req, res) => {
 
     transporter.sendMail(mailOptions, (err) => {
       if (err) {
-        return res.status(500).json({ message: 'Error sending email' });
+        console.error('Error sending password reset email:', err);
+        return res.status(500).json({ message: 'Error sending email', error: err.message });
       }
       res.status(200).json({ message: 'Password reset email sent' });
     });

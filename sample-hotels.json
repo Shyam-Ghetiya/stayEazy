@@ -1,0 +1,156 @@
+[
+  {
+    "_id": "6a07e52635efb4528f6cf02e",
+    "hotelName": "Silver Mumbai Resort",
+    "city": "mumbai",
+    "country": "india",
+    "address": "183, Maharashtra, India",
+    "description": "Enjoy breathtaking views, exceptional cuisine, and world-class hospitality.",
+    "roomCount": 84,
+    "facilities": [
+      "AC",
+      "Power backup",
+      "Free Wifi",
+      "Swimming Pool",
+      "Elevator",
+      "CCTV",
+      "Bar"
+    ],
+    "pricePerNight": 3265,
+    "ratings": [],
+    "images": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    ],
+    "bookings": [],
+    "contactNo": "9910525114",
+    "email": "silvermumbairesort@stayeazy.com",
+    "password": "$2b$10$cnLHrDKFE0XS3y5yznftMOb5n/8xpW561rc8kzBcXo4KCD89yURMu",
+    "createdAt": "2026-05-16T03:31:50.174Z",
+    "updatedAt": "2026-05-16T03:31:50.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a07e52635efb4528f6cf02f",
+    "hotelName": "Elite Delhi Hotel",
+    "city": "delhi",
+    "country": "india",
+    "address": "433, Delhi, India",
+    "description": "Enjoy breathtaking views, exceptional cuisine, and world-class hospitality.",
+    "roomCount": 75,
+    "facilities": [
+      "Airport Shuttle",
+      "Free Wifi",
+      "Swimming Pool",
+      "Elevator",
+      "Restaurant",
+      "Gym",
+      "CCTV",
+      "Conference Room",
+      "Room Service"
+    ],
+    "pricePerNight": 3452,
+    "ratings": [],
+    "images": [
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa"
+    ],
+    "bookings": [],
+    "contactNo": "9449166467",
+    "email": "elitedelhihotel@stayeazy.com",
+    "password": "$2b$10$cnLHrDKFE0XS3y5yznftMOb5n/8xpW561rc8kzBcXo4KCD89yURMu",
+    "createdAt": "2026-05-16T03:31:50.174Z",
+    "updatedAt": "2026-05-16T03:31:50.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a07e52635efb4528f6cf030",
+    "hotelName": "Silver Bangalore Resort",
+    "city": "bangalore",
+    "country": "india",
+    "address": "130, Karnataka, India",
+    "description": "Your home away from home with spacious rooms, excellent dining, and warm hospitality.",
+    "roomCount": 23,
+    "facilities": [
+      "Restaurant",
+      "Spa",
+      "Bar",
+      "CCTV",
+      "Parking",
+      "Elevator",
+      "Gym",
+      "Conference Room",
+      "Swimming Pool"
+    ],
+    "pricePerNight": 8185,
+    "ratings": [],
+    "images": [
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    ],
+    "bookings": [],
+    "contactNo": "9816791146",
+    "email": "silverbangaloreresort@stayeazy.com",
+    "password": "$2b$10$cnLHrDKFE0XS3y5yznftMOb5n/8xpW561rc8kzBcXo4KCD89yURMu",
+    "createdAt": "2026-05-16T03:31:50.174Z",
+    "updatedAt": "2026-05-16T03:31:50.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a07e52635efb4528f6cf031",
+    "hotelName": "Elite Hyderabad Towers",
+    "city": "hyderabad",
+    "country": "india",
+    "address": "100, Telangana, India",
+    "description": "Your home away from home with spacious rooms, excellent dining, and warm hospitality.",
+    "roomCount": 99,
+    "facilities": [
+      "Room Service",
+      "Laundry",
+      "Airport Shuttle",
+      "Parking",
+      "Bar",
+      "AC",
+      "Power backup"
+    ],
+    "pricePerNight": 4861,
+    "ratings": [],
+    "images": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    ],
+    "bookings": [],
+    "contactNo": "9677581116",
+    "email": "elitehyderabadtowers@stayeazy.com",
+    "password": "$2b$10$cnLHrDKFE0XS3y5yznftMOb5n/8xpW561rc8kzBcXo4KCD89yURMu",
+    "createdAt": "2026-05-16T03:31:50.174Z",
+    "updatedAt": "2026-05-16T03:31:50.174Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a07e52635efb4528f6cf032",
+    "hotelName": "Paradise Chennai Grand",
+    "city": "chennai",
+    "country": "india",
+    "address": "76, Tamil Nadu, India",
+    "description": "Modern amenities meet traditional charm in this beautifully appointed property.",
+    "roomCount": 16,
+    "facilities": [
+      "Bar",
+      "CCTV",
+      "Room Service",
+      "Airport Shuttle",
+      "Free Wifi",
+      "Swimming Pool",
+      "Restaurant"
+    ],
+    "pricePerNight": 8496,
+    "ratings": [],
+    "images": [
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c"
+    ],
+    "bookings": [],
+    "contactNo": "9079003141",
+    "email": "paradisechennaigrand@stayeazy.com",
+    "password": "$2b$10$cnLHrDKFE0XS3y5yznftMOb5n/8xpW561rc8kzBcXo4KCD89yURMu",
+    "createdAt": "2026-05-16T03:31:50.175Z",
+    "updatedAt": "2026-05-16T03:31:50.175Z",
+    "__v": 0
+  }
+]

@@ -281,8 +281,8 @@ const handleBookingRequest = asyncHandler(async (req, res) => {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'shyamdummy10@gmail.com', // Add this to your .env file
-                pass:  'bfzodqaskcnrgiyr'// Add this to your .env file (Gmail app password)
+                user: process.env.EMAIL_USER,
+                pass: process.env.EMAIL_PASS
             }
         });
 
